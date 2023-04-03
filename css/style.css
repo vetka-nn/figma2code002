@@ -1,0 +1,460 @@
+/* COMMON STYLES */
+
+html {
+	box-sizing: border-box;
+	font-size: 1.25rem;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.33;
+	background-color: #f1f1f1;
+	color: #000000;
+}
+
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3.2rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-size: 1.1rem;
+}
+
+h5 {
+	font-size: 0.9rem;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 64px;
+}
+
+.flexy {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.aligncenter {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.orderfirst {
+	order: -1;
+}
+
+.basis33 {
+	flex-basis: 33.3%;
+}
+
+.basis50 {
+	flex-basis: 50%;
+	max-width: 50%;
+	overflow: hidden;
+}
+
+.basis66 {
+	flex-basis: 66.6%;
+}
+
+/* COMMON STYLES END */
+/* 	HEADER */
+
+.header {
+	font-size: 14px;
+	line-height: 38px;
+}
+
+.topbar {
+	height: 40px;
+	background: #D8BF95;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 40px;
+}
+
+.nav {
+	height: 88px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.nav > a, .nav p {
+	flex-grow: 2;
+	text-align: right;
+	padding: 0 0 0 10px;
+}
+
+.nav .logo {
+	text-align: center;
+	padding: 0 10px;
+}
+
+.nav .logo, .nav p, .nav .cart {
+	flex-grow: 1;
+}
+
+.nav .orderfirst {
+	flex-grow: 3;
+	text-align: left;
+	padding: 0 10px 0 0;
+}
+
+.lang {
+	text-transform: none;
+}
+
+.lang a {
+	color: #C4C4C4;
+}
+
+.lang a, .lang span {
+	padding: 0 5px;
+}
+
+.lang *:first-child {
+	border-right: 1px solid #000000;
+}
+
+/* 	HEADER END */
+
+.truemain {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* 	SLIDER */
+
+.slider {
+	justify-content: initial;
+}
+
+.slide {
+	position: relative;
+	background-color: #666666;
+	margin: 0;
+	padding: 0;
+	width: 33.3%;
+}
+
+.slide img {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.slide p {
+	position: absolute;
+	bottom: 28px;
+	left: 28px;
+	color: #ffffff;
+	font-size: 0.7rem;
+}
+
+.slide a {
+	color: #ffffff;
+}
+
+/* 	SLIDER END */
+/* 	SLOGAN */
+
+.slogan {
+	padding: 120px 0;
+}
+
+.slogan h1 {
+	line-height: 1em;
+	margin: 0 0 1.5rem 0;
+}
+
+.slogan .basis66 {
+	flex-basis: 69.5%;
+}
+
+.slogan .basis33 {
+	flex-basis: 30%;
+}
+
+.slogan .shoplink {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+/* 	SLOGAN END */
+/* 	NEWGOODS */
+
+.newgoods .itemcard {
+	position: relative;
+	margin: 50px 25px;
+	padding: 0;
+	max-width: calc(33% - 52px);
+	overflow: hidden;
+	text-align: center;
+}
+
+.newgoods .itemcard h5, .newgoods .itemcard p {
+	position: absolute;
+	text-align: left;
+	font-size: 0.7rem;
+	width: 75%;
+}
+
+.newgoods .itemcard .itemtitle {
+	top: 0;
+	left: 0;
+	font-size: 0.8rem;
+}
+
+.newgoods .itemprice {
+	bottom: 0;
+	left: 0;
+}
+
+.newgoods .itemcard .itemlink {
+	bottom: 0;
+	right: 0;
+	text-align: right;
+}
+
+.newgoods .itemimg {
+	margin: 50px auto 0;
+	text-align: center;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* 	NEWGOODS END */
+/* 	PROMO */
+
+.promo {
+	margin-bottom: 40px;
+}
+
+.promoimg, .promoimg * {
+	position: relative;
+}
+
+.promoimg img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.promoimg h5 {
+	margin: 60px 0 0 45px;
+}
+
+.promodescr {
+	padding: 50px 0 50px 50px;
+}
+
+.promodescr p {
+	font-size: 0.7rem;
+}
+
+/* 	PROMO END */
+/* 	CATEGORIES */
+
+.categories .flexy {
+	align-content: space-between;
+}
+
+.arrow a:hover {
+	text-decoration: none;
+}
+
+.catcard {
+	flex-basis: 32%;
+	position: relative;
+	min-height: 27rem;
+}
+
+.catcard h3 {
+	font-size: 1.65rem;
+	position: absolute;
+	bottom: 1rem;
+	left: 15px;
+}
+
+.catcard h3, .catcard a {
+	color: #ffffff;
+}
+
+.catcard img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.catcard img:hover {
+	z-index: 2;
+}
+
+.pagination {
+	text-align: center;
+	padding: 20px 0 60px;
+}
+
+.squarebullet {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	line-height: 6px;
+	margin: 0 5px;
+	background-color: #c4c4c4;
+}
+
+.squarebullet.active {
+	background-color: #000000;
+}
+
+/* 	CATEGORIES END */
+/* 	INFOGRAFICS */
+
+.infografics h3, .infografics p {
+	text-align: left;
+	padding-right: 30px;
+}	
+
+.infografics h2, .infografics h3 {
+	margin: 60px 0;
+}
+
+.infografics h3 {
+	font-size: 1.5rem;
+}
+
+.infografics p {
+	font-size: 1.2rem;
+}
+
+.infografics .morelink {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	margin: 60px 0 50px 0;
+}
+
+/* INFOGRAFICS END */
+/* SUBSCRIBE */
+
+.subscribe {
+	margin: 100px 0;
+	padding: 80px 0 20px 0;
+	background: #666666 url(../img/subscribe.png) 0 50% no-repeat;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.subscribe p {
+	font-size: 0.9rem;
+	margin-bottom: 20px;
+}
+
+.subscribe a {
+	color: #ffffff;
+}
+
+.subscribe h2 {
+	font-size: 2.3rem;
+	margin: 200px 0 40px 0;
+}
+
+.subscribe form {
+	border-bottom: 1px solid;
+}
+
+.subscribe input {
+	background-color: transparent;
+	border: none;
+}
+
+.subscribe input[type=email] {
+	width: 90%;
+}
+
+.subscribe input[type=submit] {
+	width: 9%;
+	text-align: right;
+}
+
+/* SUBSCRIBE END */
+/* FOOTER */
+
+.footer>.container>.basis50>.flexy {
+	justify-content: flex-start;
+}
+
+.footer h5 {
+	margin-bottom: 30px;
+}
+
+.footer li {
+	font-size: 0.8rem;
+	padding: 0 30px 15px 0;
+}
+
+.footer .lang {
+	font-size: 0.8rem;
+}
+
+.footer .copyright, .footer .copyright a {
+	font-size: 0.7rem;
+	color: #9B9B9B;
+}
